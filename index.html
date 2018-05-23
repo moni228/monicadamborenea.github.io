@@ -3,30 +3,69 @@
 <head> 
     <title>Home Questionnaire<span id="selection-marker-1" class="redactor-selection-marker"></span></title> 
 
-<script>
+<!--<script>
   !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="4.0.0";
   analytics.load("5UHzCeo2lrrwCsOkNiO08YcnbOkmwaz5");
   analytics.page();
   }}();
-</script>
+</script>-->
     
-<!-- Facebook Pixel Code -->
 <script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '2119967048287491');
-  fbq('track', 'PageView');
+    
+  !function () { 
+var analytics = window.analytics = window.analytics || []; 
+if (!analytics.initialize) if (analytics.invoked) window.console && console.error && console.error("Segment snippet included twice."); else { 
+analytics.invoked = !0; 
+analytics.methods = ["trackSubmit", "trackClick", "trackLink", "trackForm", "pageview", "identify", "reset", "group", "track", "ready", "alias", "page", "once", "off", "on"]; 
+analytics.factory = function (t) { 
+return function () { 
+var e = Array.prototype.slice.call(arguments); 
+e.unshift(t); 
+analytics.push(e); 
+return analytics 
+} 
+}; 
+for (var t = 0; t < analytics.methods.length; t++) { 
+var e = analytics.methods[t]; 
+analytics[e] = analytics.factory(e) 
+} 
+analytics.load = function (t) { 
+var e = document.createElement("script"); 
+e.type = "text/javascript"; 
+e.async = !0; 
+e.src = ("https:" === document.location.protocol ? "https://" : "http://") + "cdn.segment.com/analytics.js/v1/" + t + "/analytics.min.js"; 
+var n = document.getElementsByTagName("script")[0]; 
+n.parentNode.insertBefore(e, n) 
+}; 
+analytics.SNIPPET_VERSION = "3.1.0"; 
+var TRAITS = {}, PROPS = {}, integrations = {}, REFERRER;
+
+function getParameterByName(e) { 
+e = e.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]"); 
+var m = new RegExp("[\\?&]" + e + "=([^&#]*)"), t = m.exec(location.search); 
+return null === t ? "" : decodeURIComponent(t[1].replace(/\+/g, " ")) 
+}
+
+document.referrer && (REFERRER = document.referrer); 
+var utm_source = getParameterByName("utm_source"), utm_medium = getParameterByName("utm_medium"), 
+utm_term = getParameterByName("utm_term"), utm_content = getParameterByName("utm_content"), 
+utm_campaign = getParameterByName("utm_campaign"), gclid = getParameterByName("gclid"); 
+"" !== utm_source && (PROPS.utm_source = utm_source), "" !== utm_medium && (PROPS.utm_medium = utm_medium), "" !== utm_term && (PROPS.utm_term = utm_term), "" !== utm_content && (PROPS.utm_content = utm_content), "" !== utm_campaign && (PROPS.utm_campaign = utm_campaign), "" !== gclid && (PROPS.gclid = gclid);
+
+analytics.load("ywhUp6VsHaahiJssv7f0jn661boN84jv"); 
+
+integrations.Intercom = { 
+user_hash: "008f5f775e112a0f322bcfbba1611c8a2f41b7e3f992476678b1ac2396994898", 
+}; 
+TRAITS.email = "greg.hinch.testmay21@growthstreet.co.uk"; // Email address 
+TRAITS.createdAt = "1526923350"; // Signup date as a Unix timestamp 
+TRAITS.is_lender = true; 
+analytics.identify("greg.hinch.testmay21@growthstreet.co.uk", TRAITS, integrations); 
+analytics.page({properties: PROPS, referrer: REFERRER}) 
+} 
+}();
+    
 </script>
-<noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=2119967048287491&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Facebook Pixel Code -->
 
     
     
