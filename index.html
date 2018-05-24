@@ -10,13 +10,13 @@
   
   analytics.SNIPPET_VERSION="4.0.0";
 
-       
-  analytics.load("5UHzCeo2lrrwCsOkNiO08YcnbOkmwaz5");
+var TRAITS = {}, PROPS = {}, integrations = {}, REFERRER;
 
-
-analytics.identify("misnippett@growthstreet.co.uk", {email:"misnippett@growthstreet.co.uk", is_lender=true}
-} 
-}();
+analytics.load("5UHzCeo2lrrwCsOkNiO08YcnbOkmwaz5"); 
+ 
+TRAITS.email = "misnippett@growthstreet.co.uk"; // Email address 
+TRAITS.is_lender = true; 
+analytics.identify("misnippett@growthstreet.co.uk", TRAITS, integrations); 
 </script>
     
 <!--<script>
