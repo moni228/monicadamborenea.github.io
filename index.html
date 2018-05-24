@@ -57,9 +57,9 @@ analytics.load("5UHzCeo2lrrwCsOkNiO08YcnbOkmwaz5");
 integrations.Intercom = { 
 user_hash: "008f5f775e112a0f322bcfbba1611c8a2f41b7e3f992476678b1ac2396994898", 
 }; 
-TRAITS.email = "probando.hinch.testmay21@growthstreet.co.uk"; // Email address 
+TRAITS.email = "probando.coninter.testmay21@growthstreet.co.uk"; // Email address 
 TRAITS.is_lender = true; 
-analytics.identify("probando.hinch.testmay21@growthstreet.co.uk", TRAITS, integrations); 
+analytics.identify("probando.coninter.testmay21@growthstreet.co.uk", TRAITS, integrations); 
 analytics.page({properties: PROPS, referrer: REFERRER}) 
 } 
 }();
@@ -70,12 +70,21 @@ analytics.page({properties: PROPS, referrer: REFERRER})
     
 </head> 
 <body> 
+ 
+TRAITS.email = "probando.monica.sininter@growthstreet.co.uk"; // Email address 
+TRAITS.is_lender = true; 
+analytics.identify("probando.monica.sininter@growthstreet.co.uk", TRAITS, integrations); 
+analytics.page({properties: PROPS, referrer: REFERRER}) 
+} 
+}();
+    
+    
     integrations.Intercom = { 
 user_hash: "008f5f775e112a0f322bcfbba1611c8a2f41b7e3f992476678b1ac2396994898", 
 }; 
-TRAITS.email = "probando.hinch.testmay21@growthstreet.co.uk"; // Email address 
+TRAITS.email = "probando.sininter.testmay21@growthstreet.co.uk"; // Email address 
 TRAITS.is_lender = true; 
-analytics.identify("probando.hinch.testmay21@growthstreet.co.uk", TRAITS, integrations); 
+analytics.identify("probando.sininter.testmay21@growthstreet.co.uk", TRAITS, integrations); 
 analytics.page({properties: PROPS, referrer: REFERRER}) 
 } 
 }();
