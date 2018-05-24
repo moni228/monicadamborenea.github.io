@@ -8,6 +8,13 @@
   analytics.load("5UHzCeo2lrrwCsOkNiO08YcnbOkmwaz5");
   analytics.page();
 
+document.referrer && (REFERRER = document.referrer); 
+var utm_source = getParameterByName("utm_source"), utm_medium = getParameterByName("utm_medium"), 
+utm_term = getParameterByName("utm_term"), utm_content = getParameterByName("utm_content"), 
+utm_campaign = getParameterByName("utm_campaign"), gclid = getParameterByName("gclid"); 
+"" !== utm_source && (PROPS.utm_source = utm_source), "" !== utm_medium && (PROPS.utm_medium = utm_medium), "" !== utm_term && (PROPS.utm_term = utm_term), "" !== utm_content && (PROPS.utm_content = utm_content), "" !== utm_campaign && (PROPS.utm_campaign = utm_campaign), "" !== gclid && (PROPS.gclid = gclid);
+
+
 TRAITS.email = "conmisnippet@growthstreet.co.uk"; // Email address 
 TRAITS.is_lender = true; 
 analytics.identify("conmisnippet@growthstreet.co.uk", TRAITS, integrations); 
