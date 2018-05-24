@@ -52,14 +52,14 @@ utm_campaign = getParameterByName("utm_campaign"), gclid = getParameterByName("g
 */
 analytics.load("5UHzCeo2lrrwCsOkNiO08YcnbOkmwaz5"); 
 
-integrations.Intercom = { 
+/*integrations.Intercom = { 
 user_hash: "008f5f775e112a0f322bcfbba1611c8a2f41b7e3f992476678b1ac2396994898", 
 }; 
 TRAITS.email = "probandohub.co.uk"; // Email address 
 TRAITS.createdAt = "1526923350"; // Signup date as a Unix timestamp 
-TRAITS.is_lender = true; 
+TRAITS.is_lender = true; */
 analytics.identify("probandohub.co.uk", {email:"probandooo@gmail.com"}); 
-analytics.page({properties: PROPS, referrer: REFERRER}) 
+analytics.page() 
 } 
 }();
 </script>
