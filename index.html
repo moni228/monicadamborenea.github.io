@@ -51,7 +51,8 @@
         });
         analytics.track('destination submitted', user, function() {
             window.location.href = "";
-        });
+            
+        }, context: { ip: "0.0.0.0" });
       }
 </script>
 </body> 
