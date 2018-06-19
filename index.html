@@ -49,10 +49,10 @@
             email: email, 
             name: fullname
         });
-        analytics.track('destination submitted', user, {context.ip = "0.0.0.0"} , function() {
+        analytics.track('destination submitted', user, options.context.ip = "0.0.0.0" , function() {
             window.location.href = "";
         });
-      }
+      
 </script>
 </body> 
 </html>
