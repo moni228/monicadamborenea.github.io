@@ -49,10 +49,9 @@
             email: email, 
             name: fullname
         });
-        analytics.track('destination submitted', user, function() {
+        analytics.track('destination submitted', user, context.ip: "0.0.0.0" , function() {
             window.location.href = "";
-            
-        }, context: { ip: "0.0.0.0" });
+        });
       }
 </script>
 </body> 
