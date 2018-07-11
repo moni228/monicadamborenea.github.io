@@ -55,7 +55,9 @@
             email: email, 
             name: fullname
         });
-        analytics.track('destination submitted', user, ip = "0.0.0.0" , function() {
+
+          
+          analytics.track('destination submitted', user, function() {
             window.location.href = "";
         });
       }
