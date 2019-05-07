@@ -57,15 +57,12 @@
             destination: destination, 
             details: details
         };
-          const appVersion = { app: { version: '1.0.0' } } ;
-
+const appVersion = { app: { version: '1.0.0' } } ;
         analytics.identify(12345, {
             email: email, 
             name: fullname
         });
-        analytics.track('destination submitted', user, appVersion, function() {
-            window.location.href = "";
-        });
+        analytics.track('destination submitted', user, context:{appVersion});
       }
 </script>
     
